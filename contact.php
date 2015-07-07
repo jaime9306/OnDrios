@@ -3,8 +3,8 @@ $field_name = $_POST['cf_name'];
 $field_email = $_POST['cf_email'];
 $field_message = $_POST['cf_message'];
 
-$mail_to = 'newthinks@live.com';
-$subject = 'Message from a site visitor '.$field_name;
+$mail_to = 'ondrios@gmail.com';
+$subject = 'Mensaje del visitante: '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
 $body_message .= 'E-mail: '.$field_email."\n";
@@ -17,14 +17,14 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
 if ($mail_status) { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Thank you for the message. We will contact you shortly.');
+		alert('Gracias por tu mensaje, contactermos contigo lo antes posible.');
 		window.location = 'index.html';
 	</script>
 <?php
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to newthinks@live.com');
+		alert('Mensaje fallido, por favor contacta con ondrios@gmail.com');
 		window.location = 'index.html';
 	</script>
 <?php
