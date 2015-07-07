@@ -3,7 +3,7 @@ $field_name = $_POST['cf_name'];
 $field_email = $_POST['cf_email'];
 $field_message = $_POST['cf_message'];
 
-$mail_to = 'ondrios@gmail.com';
+$mail_to = 'ondriosconsulting@gmail.com';
 $subject = 'Mensaje del visitante: '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
@@ -24,7 +24,7 @@ if ($mail_status) { ?>
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Mensaje fallido, por favor contacta con ondrios@gmail.com');
+		alert('Mensaje fallido, por favor contacta con ondriosconsulting@gmail.com');
 		window.location = 'index.html';
 	</script>
 <?php
